@@ -299,10 +299,8 @@ function pokemonAutoBattle(player1, player2) {
 
         turnCount++;
 
-        
-        
     
-    } while (player1.roster.length > 0 || player2.roster.length > 0);
+    } while ((player1.roster.length > 0 || player2.roster.length > 0) && (pokemon1summon.hp > 0 || pokemon2summon.hp > 0));
     
     msg = `The Battle was fierce! It took ${turnCount} turns! At last we have a winner...`;
     console.log(msg);
